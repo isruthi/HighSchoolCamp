@@ -20,5 +20,5 @@ print(short_hand)
 # strings lab ex. 3 - remove case and punctuation
 check = input("Enter a phrase:")
 symbols = not "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-removing = check.lower().replace({symbols}, "")
+removing = check.lower().replace(symbols, "")
 print(removing)
