@@ -41,19 +41,27 @@ print(new_palindrome == backwards_palindrome)
 
 
 #strings lab ex. 5 - credentials generator
-first_name = input("Enter First Name:")
-last_name = input("Enter Last Name:")
-birth_city = input("Enter Birth City:")
-university = input("Enter Alma Mater University:")
-relative = input("Enter a Relative's Name:")
-friend = input("Enter a Friend's Name:")
+import random
+
+first_name = input("Enter First Name: ")
+last_name = input("Enter Last Name: ")
+birth_city = input("Enter Birth City: ")
+university = input("Enter Alma Mater University: ")
+relative = input("Enter a Relative's Name: ")
+friend = input("Enter a Friend's Name: ")
 
 employee_id1 = (first_name[:3])
-employee_id2 = (last_name[-3:-1])
+employee_id2 = (last_name[-2:])
 employee_id = f"{employee_id1}{employee_id2}"
-user_name1 = (birth_city[0:2])
-user_name2 = (university[-4:-1])
+user_name1 = (birth_city[:2])
+user_name2 = (university[-3:])
 user_name = f"{user_name1}{user_name2}"
+number1 = random.randint(0, len(relative) - 1)
+number2 = random.randint(0, len(friend) - 1)
+password1 = (relative[number1:])
+password2 = (friend[0:number2])
+password = f"{password1}{password2}"
 
-print(employee_id)
-print(user_name)
+print(f"Employee ID: {employee_id}")
+print(f"User Name: {user_name}")
+print(f"Password: {password}")

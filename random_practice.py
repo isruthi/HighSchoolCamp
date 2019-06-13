@@ -6,8 +6,8 @@ date: 2019-06-12 09:53
 
 import random
 
-name = input("Enter your name:")
-salary = input("Enter your salary:")
+name = input("Enter your name: ")
+salary = input("Enter your salary: ")
 salary = int(salary)
 print(f"{name}, your current salary is ${salary}.")
 

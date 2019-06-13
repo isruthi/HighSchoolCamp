@@ -8,7 +8,7 @@ date: 2019-06-13 09:55
 def is_letter(character):
     return character.lower() in "abcdefghijklmnopqrstuvwxyz"
 
-character = input("Enter a character:")
+character = input("Enter a character: ")
 print(is_letter(character))
 print(is_letter("i"))
 print(is_letter("@"))
@@ -20,7 +20,7 @@ def short_hand(short):
     short = short.replace("a", "").replace("e", "").replace("i", ""). replace("o", "").replace("u", "")
     return short
 
-phrase = input("Enter a phrase:")
+phrase = input("Enter a phrase: ")
 print(short_hand(phrase))
 print(short_hand("Thank you for that! You are too sweet and kind!"))
 print(short_hand("How are you today?"))
@@ -36,7 +36,7 @@ def removing(check):
         .replace("/", "").replace("?", "").replace(" ", "")
     return check
 
-phrase2 = input("Enter a phrase:")
+phrase2 = input("Enter a phrase: ")
 print(removing(phrase2))
 print(removing("Madam, I'm Adam"))
 
@@ -52,7 +52,7 @@ def palindrome(check):
     check2 = check1[::-1]
     return (check2 == check1)
 
-phrase3 = input("Enter a phrase:")
+phrase3 = input("Enter a phrase: ")
 print(palindrome(phrase3))
 print(palindrome("Madam, I'm Adam"))
 print(palindrome("Computer"))
