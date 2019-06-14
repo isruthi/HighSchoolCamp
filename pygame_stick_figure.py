@@ -8,8 +8,8 @@ import pygame
 
 pygame.init()
 
-WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
 
 pi = 3.141592653
 
@@ -33,17 +33,22 @@ while not done:
     pygame.draw.ellipse(screen, BLACK, [150, 100, 20, 40])
     pygame.draw.ellipse(screen, BLACK, [225, 100, 20, 40])
     pygame.draw.arc(screen, BLACK, [150, 115, 100, 100], pi, 0, 5)
+
     # stick boi's torso
     pygame.draw.line(screen, BLACK, [200, 250], [200, 500], 5)
+
     # stick boi's right arm
     pygame.draw.line(screen, BLACK, [200, 325], [270, 360], 5)
     pygame.draw.line(screen, BLACK, [270, 360], [315, 325], 5)
+
     # stick boi's left arm
     pygame.draw.line(screen, BLACK, [130, 360], [200, 325], 5)
     pygame.draw.line(screen, BLACK, [85, 325], [130, 360], 5)
+
     # stick boi's right leg
     pygame.draw.line(screen, BLACK, [200, 500], [300, 575], 5)
-    #stick boi's left leg
+
+    # stick boi's left leg
     pygame.draw.line(screen, BLACK, [100, 575], [200, 500], 5)
 
     pygame.display.flip()
